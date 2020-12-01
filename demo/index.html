@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../lit-test-state.js';
+
+    render(
+      html`
+        <lit-test-state count="0" count2="1">
+        </lit-test-state>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+</html>
